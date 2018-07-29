@@ -1,0 +1,159 @@
+body{
+	width: 100% auto;
+	min-width: 50%;
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-size:12px;
+	font-family:"宋体","微软雅黑";
+	/*background-color: red;*/
+	/*background-image: url(./images/bacground.png);*/
+	/*background-color: red;*/
+	
+}
+.home{
+	 margin: 0 auto;
+     width: 80%;/*原始65*/
+     min-width: 980px;/*页面顶部的宽度*/
+     background-color: rgba(245, 245, 245, 0.7);
+     padding: 30px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+.div_nav{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	min-width: 45%;
+	height: 30px;
+	
+	text-align: center;/*居中显示文本*/
+	/*background-color: pink;*/
+}
+
+.my_name{
+	margin: auto;
+	padding: 0;
+	width: 60%;
+	min-width: 45%;
+	text-align: right;
+
+}
+.div_content{
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	min-width: 45%;
+	text-align: center;
+	/*background-color: green;*/
+	/*background-image: url(images/img1.jpg);*/
+	/*background-repeat: no-repeat;*/
+
+}
+/*清除浮动*/
+.clearfix:before , .clearfix:after{
+			content:"";
+			height=0;
+			line-height=0;
+			display:block;
+
+			clear:both;
+			visibility:hidden;
+
+		}
+.clearfix{
+
+			zoom:1;
+		}
+.div_content .content_right_side{
+	float: right;
+	width: 20%;
+	height: 1000px;
+}
+.div_content .content_right_side #bir_03{
+	position: fixed;
+	right:9%;
+	top: 35%; 
+}
+.div_content .content_middle_side{
+	float: left;
+	width: 60%;
+	height: 1000px;
+	/*border: grey solid 2px;*/
+	background-color: rgba(255,255,255,1);
+}
+.div_content .content_left_side{
+	float: left;
+	width: 20%;
+	height: 1000px;
+	text-align: center;
+}
+.div_content .content_left_side #bir_01{
+	position: fixed;
+	left: 50px;
+	top: 50%;
+	bottom: auto;
+}
+.p_rocket{
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 99;
+
+}
+.div_content .content_right_side .p_rocket #rocket{
+	width: 34px;
+	height: 64px;
+	display: block;
+
+	background-image: url(images/o_rocket.png);
+
+}
+.div_bottom{
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+
+	/*position: absolute;*/
+	width: 100%;
+	min-width: 45%;
+	height: 100px;
+	/*border: dotted;*/
+	/*background-image: red;*/
+	text-align: center;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.div_bottom #bir_05{
+	margin: 0 auto;
+	padding: 0;
+	/*border: solid;*/
+
+}
+
+.div_content .content_middle_side .button_letter
+{
+	float: left;
+	position: fixed;
+	top: 50%;
+	left: 44%;
+	bottom: 30%;
+	text-align:center;
+	/*margin: 50% auto;*/
+}
+.div_content .content_middle_side .button_letter .button_letter{
+	/*设置信封gif的div*/
+
+
+}
+.div_content .content_middle_side #letter{
+	/*设置信封的div*/
+	text-align: left;
+	/*font:40px normal normal "微软雅黑","宋体";*/
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: "微软雅黑","宋体";
+	text-indent: 2em;/*空两格*/
+}

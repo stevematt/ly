@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- 生日快乐 -->
+<!-- 
+
+	学艺不精，见谅见谅，(*^_^*)，目前就做成这样，差了点，但是好歹是自己做的，
+	
+	再次————
+	
+	生日快乐
+	
+	
+ -->
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Ly,Happy Birthday!</title>
+	<link rel="stylesheet" type="text/css" href="./css/bth.css">
+	<style type="text/css">
+		/*html里面设置css*/
+		body{
+			background-image: url(./images/bacground.png);
+		}
+		img{
+			max-width: 100%;
+			/*max-width: 100%;*/
+			min-width: 50%;
+			max-height: 100%;
+			min-height: 50%
+		}
+		a{
+			color:#000;
+			text-decoration:none;
+		}
+		a:hover{
+			cursor: pointer;
+		}
+
+	</style>
+	<link rel="shortcut icon" href="./images/favicon.ico" >
+</head>
+<body onload="load()">
+
+	<!--设置背景音乐-->
+	<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
+	<!--<source src="你要播放的音乐.ogg" type="audio/ogg" />-->
+	<source src="Schnappi.mp3" type="audio/mp3" />
+	</audio>
+	<div class="home">
+		<!-- 作为最大的一个div容器 -->
+		<div class="div_nav" >
+			<!-- 这个作为头部 -->
+			<h1><b><em>Ly,Happy Birthday</em></b></h1>
+
+		</div>
+		<div class="my_name">
+			<h2><b><p>~~Matt</p></b></h2>
+		</div>
+		<div class="div_content clearfix" >
+			<!-- 这个作为中部内容 -->
+			<div class="content_left_side">
+				<!-- 内容左部 -->
+				<div id="swallow_1">
+					<img src="./images/swallow_01.gif">
+				</div>
+				<div id="bir_01">
+					<img src="./images/bir_01.gif">
+					<br>
+					<button onclick="document.getElementById('bir_01').style.visibility='hidden'">hide</button>
+				</div>				
+			</div>
+			
+			<div class="content_middle_side">
+				<!-- 内容中部 -->
+				<div class="button_letter" id="b_l">
+					<div class="img_letter">
+						<h2><strong>你收到一封邮件</strong></h2>
+						<img src="./images/Bon_anniversaire.gif" >
+						
+					</div>
+					<div class="__button">
+						<button id="but_look" onclick="tic()">
+						 	<a href="#">查看邮件^_^</a>
+						</button>
+						
+						<button id="but_nolook" onclick="clickMeEvent()" >
+							不看
+						</button>
+
+					</div>
+				</div>
+				<div id="letter" style="visibility: hidden;">
+					<!-- 信的主要内容 -->
+					李艳：
+						<p>首先呢，祝你生日快乐。希望你暑假开开心心的过o(*￣▽￣*)ブ。在海南上学能开开心心上，最终走自己想走的路。（词穷了……）
+						</p>
+						<p>
+							其次，我写这封信的原因还有就是向你道个歉，虽说事情过去挺长时间了，但是我觉得我还是得说：对不起。<br>当时我在学校的行为……很不对，emmm，还有就是当时说好要送你十八岁生日礼物，结果又因为我自己记性，搞的有点不太好，然后就凉了，后来就是也一直没有找机会说，想想本来打算你20岁的时候送你生日礼物的（毕竟是20，好歹是个整数，比较有仪式感），不过今年先给你一个刚好，想想呢，送你别的生日礼物，你可能还不喜欢，之前就打算送你一个DIY的一个手工品，不过后来不是歇菜了吗（呵呵。。），然后今年正好想到不如送这个玩儿，可能还比较不错，嗯，就是这样。<br>
+							emmmm，然后，……啊，真的好难说别的啊，本来想聊聊别的，但是发现其实我什么都不知道……算了，谈谈之前的吧，如果不想看的话，可以选择直接跳过，下面的下划线。
+						</p>
+						<p><此处应有下划线~~~啦啦啦></p>
+						<hr>
+						<p>
+							虽然我不太喜欢谈以前的事，但我觉得我还是想当时。当时为什么我忽然脑残了呢，主要是因为当时我自己脑子抽了……嗯，差不多就是这个意思，我也不知道太具体，可能是感觉有点不太舒服？？ 或许吧，其实本来没啥的，我也不知道怎么回事了，当时就脑子抽了一下，然后之后就没抽回来………
+						</p>
+						<br>
+						<此处应还有下划线>
+						<hr>
+						<p>
+							好了，差不多了，具体差不多就这样，也没什么别的，在此祝你生日快乐，玩的开心。
+						</p>
+						<p style="text-align: right;">
+							--来此一个受东北寒冷和炎热摧残的小孩
+						</p>
+
+						<hr>
+						<P>
+							P.S:提醒一下，如果你此时用的是电脑的话，按下F12键，
+							你会发现惊喜哦，ok。
+						</P>
+					
+
+				</div>
+
+
+			</div>
+			<div class="content_right_side">
+				<!-- 内容的右边框 -->
+				<!-- <img src="images/img1.jpg" width="100%" height="100%"> -->
+				<p class="p_rocket">
+					<a href="#" id="rocket" onclick="function()"></a>
+				<!-- <img src="images/o_rocket.png" id="rocket" > -->
+				</p>
+
+				<div id="bir_03">
+					<img src="./images/bir_03.gif">
+				</div>
+
+			</div>
+			
+		</div>
+		<div class="div_bottom">
+			<!-- 底部部分 -->
+			<div id="bir_05">
+				<img src="./images/bir_05.gif" >
+			</div>
+		</div>
+
+	</div>
+	<!-- <script type="text/javascript">
+		$(function() {
+			// hide #rocket first
+			$('#rocket').hide();
+			// fade in #rocket
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 500) {
+					$('#rocket').fadeIn();
+				} else {
+					$('#rocket').fadeOut();
+				}
+			});
+			// scroll body to 0px on click
+			$('rocket').click(function() {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+		});
+	</script> -->
+	<script type="text/javascript">
+		// 这个是用作显示信 的
+		function tic(){
+			document.getElementById("b_l").style.visibility="hidden";
+			document.getElementById("letter").
+			style.visibility="visible";
+
+		}
+	</script>
+	<script type="text/javascript">
+		function load(){
+			alert("这是一封来自快被冻死和热死的人发来的邮件 skr！skr！")
+		}
+	</script>
+	<script type="text/javascript">
+		window.onunload="alert('按F12 还有好玩的哦')";
+	</script>
+	<script type="application/javascript">
+		var times=0;
+		function clickMeEvent(){
+			if(times==0){
+				times++;
+				document.getElementById("but_nolook").innerHTML="真的不看吗？";
+
+			}
+			else if(times==1){
+				times++;
+				document.getElementById("but_nolook").innerHTML="确定不看吗？";			
+
+			}
+			else if(times==2){
+				times++;
+				document.getElementById("but_nolook").innerHTML="真的确定吗--";
+
+			}
+			else if(times==3){
+				times++;
+				document.getElementById("but_nolook").
+				innerHTML="看看吧还是？";
+				
+				
+			}
+			else if (times==4) {
+				tic();
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!-- 
+	吐槽部分：
+			如果你能看到这部分，那么恭喜你，你看到了我对这个程序的吐槽…………
+		其实我也很无奈，本来我想这个程序应该做的很漂亮的，但是无奈只学了三天还没学完，只能现学现卖了，很尴尬，不过好歹基本的音乐什么的还可以实现，其实我之前还有一个想法，不过我发现那一块的知识我没碰过，想来也算了，还有就是这个程序里面的gif花里胡哨的……我也不是不想找个好点的，但是网上现在gif的质量也就这样，自己做的话，一时半会儿还做不完，没怎么搞过，所以只能退而求其次，将就着用了，话说我也很无奈啊，我这个有强迫症的人，竟然要去用这些gif，我很痛苦啊。。。
+		好吧，虽然这个程序gif难看点，背景单调点，功能不全点，但是，好歹能用了，这还能说什么呢，再次————
+		哈哈，你猜什么啊
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		—————
+		Bon anniversaire，swallow
+
+ -->
